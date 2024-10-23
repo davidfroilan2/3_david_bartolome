@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Práctica 2.4.1</title>
+    <h1>Práctica 2.4.1 David Bartolomé</h1>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form_button {
+            display: block;
+            margin-top: 15px;
+            background-color: rgb(79, 60, 96);
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="mailto:david.bartolome@educa.madrid.org">
+        <fieldset>
+            <legend>Personaje</legend>
+            <label for="Superheroe">Superhéroe favorito</label>
+
+            <select id="Superheroe" name="Superheroe">
+                <option value="Spiderman">Spiderman</option>
+                <option value="Batman">Batman</option>
+                <option value="CapA">Capitan America</option>
+                <option value="Uganda">Black Panther</option>
+                <option value="DeadPool">DeadPool</option>
+                <option value="HarryPotter">Harry Potter</option>
+                <option value="Kappa">Kappa</option>
+                <option value="Cr7">Cr7</option>
+            </select>
+
+            <label for="color">Color</label>
+            <input name="color" id="color" type="color">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de usuario</legend>
+            <label for="Nombre">Nombre</label>
+            <input id="Nombre" placeholder="Escribe Aquí" id="name" type="text"></input>
+            <label for="Telefono">Teléfono</label>
+            <input id="Telefono" placeholder="Escribe Aquí" id="Telefono" type="number"></input>
+
+        </fieldset>
+        <input class="form_button" type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
