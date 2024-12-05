@@ -12,12 +12,12 @@ function calcularNotaFinal() {
     var notaFinal = calcularMedia(notaPrimeraEv, notaSegundaEv)
     console.log("Nota media: " + notaFinal)
     if (notaFinal >= 5) {
-        divResultado.innerHTML = "APROBADO :)" + nombre + " Tu nota es: " + notaFinal;
+        divResultado.innerHTML = "APROBADO :) " + nombre + " Tu nota es: " + notaFinal;
         divResultado.style.backgroundColor = "green";
     }
 
     else {
-        divResultado.innerHTML = "SUSPENSO :(" + nombre + " Tu nota es: " + notaFinal;
+        divResultado.innerHTML = "SUSPENSO :( " + nombre + " Tu nota es: " + notaFinal;
         divResultado.style.backgroundColor = "red";
     }
 }
