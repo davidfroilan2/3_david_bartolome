@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo de Eventos</title>
+    <style>
+        #micaja {
+            max-width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button onclick="cambiarColor()">Cambiar Color</button>
+
+    <div id="micaja" onmouseenter="hola()" onmouseleave="adios()">
+        ¡Hola Mundo!
+    </div>
+
+    <script>
+        function cambiarColor() {
+            var div = document.getElementById('micaja');
+            var divColor = div.style.backgroundColor;
+
+            if (divColor == "orange") {
+                div.style.backgroundColor = "green";
+            } else if (divColor == "green") {
+                div.style.backgroundColor = "red";
+            } else {
+                div.style.backgroundColor = "grey";
+            }
+        }
+        function ola() {
+            document.getElementById("micaja").innerHTML += " HEY!";
+        }
+        function adeu() {
+            document.getElementById("micaja").innerHTML += " ADIOS!";
+        }
+    </script>
+
+</body>
+
+</html>
