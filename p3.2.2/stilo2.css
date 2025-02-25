@@ -1,33 +1,31 @@
-    <style>
-        .container {
-            display: grid;
-            grid-template-rows: 20% 65% 15%;
-            grid-template-columns: 25% 25% 25% 25%;
-            grid-template-areas:
-                "header header header header"
-                "main main . aside"
-                "footer footer footer footer";
-            height: 100vh;
-        }
 
-        header {
-            grid-area: header; 
-            background-color: blue;
-            
-        }
+  .container {
+    display: grid;
+    grid-template-rows: 20% 65% 15%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+     "header header header header"
+     "main main . aside"
+     "footer footer footer footer";
+    height: 100vh;
+}
 
-        main {
-            grid-area: main;
-            background-color: crimson
-        }
+header {
+    grid-area: header;
+    background-color: blue;
+}
 
-        aside {
-            grid-area: aside;
-            background-color: darkorange;
-        }
+main {
+    grid-area: main;
+    background-color: crimson;
+}
 
-        footer {
-            grid-area: footer;
-            background-color: forestgreen;
-        }
-    </style>
+aside {
+    grid-area: aside;
+    background-color: rgb(205, 46, 237);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(242, 255, 55);
+}
